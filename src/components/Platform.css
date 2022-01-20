@@ -1,0 +1,42 @@
+.platform {
+    text-align: center;
+    color: var(--primary);
+    background: #f5f8ff;
+}
+
+.platform .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem; 
+    background: #f5f8ff;
+ }
+
+
+ .platform .container .kraken {
+     padding: 2.5rem;
+ }
+ .platform .container .ftx {
+    padding: 2.5rem;
+}
+.platform .container .bitfinex {
+    padding: 2.5rem;
+}
+.platform .container .webull {
+    padding: 2.5rem;
+}
+.platform .container .coinbase {
+    padding: 2.5rem;
+}
+.platform .container .binance {
+    padding: 2.5rem;
+}
+
+ @media screen and (max-width: 940px) {
+    .platform .container {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+    
+}

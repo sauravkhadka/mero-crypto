@@ -1,0 +1,140 @@
+.devices .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem; 
+    background-color: #f5f8ff;
+}
+ 
+.devices .right img {
+    width: 100%;
+    max-width: 600px;
+}
+ 
+.devices .left h2 {
+     margin: 1.2rem;
+     color: var(--primary);
+}
+ 
+.devices .left p {
+   margin: 1.2rem;
+}
+ 
+.devices .container .left .btn {
+  transition: all .5s ease;
+  background: transparent;
+  margin-left: -1rem;
+}
+
+.devices .container .left .btn .btn-one {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 11px;
+  padding: 13px 32px;
+  text-decoration: none;
+
+}
+.devices .container .left .btn .btn-one:after {
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%,0,0);
+}
+.devices .container .left .btn .btn-one:hover {
+  background: transparent;
+  background-color: rgb(4, 4, 24);
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+.devices .container .left .btn .btn-one:hover:after {
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+.devices .container .left .btn .btn-two {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 4px;
+  margin-top: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 11px;
+  padding: 13px 32px;
+  text-decoration: none;
+}
+.devices .container .left .btn .btn-two:after {
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%,0,0);
+}
+.devices .container .left .btn .btn-two:hover {
+  background: transparent;
+  background-color: rgb(4, 4, 24);
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+.devices .container .left .btn .btn-two:hover:after {
+  transition: all .5s;
+}
+
+@media screen and (max-width: 940px) {
+  .devices .container {
+      grid-template-columns: 1fr;
+      margin: 1rem 0;
+  }
+
+  .devices .container .left .btn {
+    background: transparent;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .devices .container .left .btn .btn-one {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 11px;
+    padding: 13px 32px;
+    text-decoration: none;
+
+  }
+  .devices .container .left .btn .btn-two {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 4px;
+    margin-top: 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 11px;
+    padding: 13px 32px;
+    text-decoration: none;
+
+  }
+  .devices .container .right img {
+    width: 100%;
+    align-items: center;
+    margin-top: 1rem;
+
+  }
+  
+}
+
+@media screen and (max-width: 478px) {
+  .portfolio .container .left {
+    grid-template-columns: 1fr;
+    margin: 5rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
