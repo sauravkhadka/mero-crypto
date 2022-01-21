@@ -37,6 +37,13 @@
     font-size: 1rem;
 }
 
+.footer li:hover {
+    cursor: pointer;
+    color: tomato;
+    text-decoration-color: tomato;
+    transition: 0.5s;
+}
+
 .footer .icon {
     color: #303030;
     margin-right: 4px;

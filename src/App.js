@@ -1,27 +1,32 @@
 import React from "react";
-import Coin from "./components/Coin";
-import Devices from "./components/Devices";
-import Features from "./components/Features";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Platform from "./components/Platform";
-import Portfolio from "./components/Portfolio";
-import Trade from "./components/Trade";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Coinss from "./pages/Coinss";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Signin from "./pages/Signin";
+import Register from "./pages/Register";
+import Contactus from "./pages/Contactus";
 
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Coin />
-      <Platform />
-      <Portfolio />
-      <Trade />
-      <Features />
-      <Devices />
-      <Footer />  
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/blog" element={<Blog />} />
+        <Route exact path="/signin" element={<Signin />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/coinss" element={<Coinss />} />
+        <Route exact path="/contactus" element={<Contactus />} />
+      </Routes>
+      <Footer /> 
     </>
   );
 }

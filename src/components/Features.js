@@ -7,7 +7,6 @@ const Features = () => {
         <div className='features'>
               <h1>Features to Fit Any Trader</h1>
             <div className='container'>
-
                 <div className='coin-icon'>
                     <img src={bic} alt='' />
                     <h2>Visual Trading</h2>

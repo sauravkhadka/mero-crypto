@@ -11,7 +11,6 @@
 
 .header .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 100%;
     padding: 1rem;
@@ -21,19 +20,24 @@
 }
 
 .nav-menu {
+    margin-left: 25rem;
     display: flex;
+}
+
+.header .container .btn-group {
+    margin-left: 1rem;
+    font-size: 10px;
 }
 
 .nav-menu li {
     padding: 0 1rem;
-}
-
-.nav-menu a {
     font-size: 1rem;
     font-weight: 500;
     color: #333;
 }
-.nav-menu a:hover {
+
+.nav-menu li:hover {
+    cursor: pointer;
     color: tomato;
     text-decoration-color: tomato;
     transition: 0.5s;
@@ -81,9 +85,45 @@
         h1 {
             font-size: 22px;
         }
+        .btn-group {
+            width: 40%;
+        }
+
+        .container .btn {
+            font-size: 10px;
+        }
 
         .hamburger {
             display: flex;
+            margin-left: 10px;
+        }
+
+        .header .container .btn-group {
+            margin-left: 1rem;
+            font-size: 10px;
+        }
+    }
+
+    @media  screen and (max-width: 400px) {
+        h1 {
+            font-size: 18px;
+        }
+        .btn-group {
+            width: 30%;
+        }
+
+        .container .btn {
+            font-size: 8px;
+        }
+
+        .hamburger {
+            display: flex;
+            margin-left: 8px;
+        }
+
+        .header .container .btn-group {
+            margin-left: 0.8rem;
+            font-size: 8px;
         }
     }
 }

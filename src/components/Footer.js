@@ -1,8 +1,14 @@
 import React from 'react'
 import {FaFacebook, FaGithub, FaLinkedin} from 'react-icons/fa'
 import './Footer.css'
+import { useNavigate } from 'react-router-dom' 
 
 const Footer = () => {
+
+    const navigate = useNavigate()
+    const handleLink = (path) => {
+        navigate(`${path}`);
+    }
     return (
         <div className='footer'>
             <div className='container'>
@@ -12,10 +18,20 @@ const Footer = () => {
                 <div className='col'>
                     <h5>Support</h5>
                     <span className='bar'></span>
-                        <a href='/'>Contact Us</a>
-                        <a href='/'>Privacy Policy</a>
-                        <a href='/'>Legal</a>
-                        <a href='/'>FAQs</a>
+                    <ul className='click'> 
+                        <li onClick={() => handleLink("/contactus")}>
+                            Contact Us
+                        </li>
+                        <li onClick={() => handleLink("/contactus")}>
+                             Privacy Policy
+                        </li>
+                        <li onClick={() => handleLink("/contactus")}>
+                            Legal
+                        </li>
+                        <li onClick={() => handleLink("/contactus")}>
+                            FAQs
+                        </li>
+                    </ul>
                    
                 </div>
                 <div className='col'>
@@ -30,10 +46,20 @@ const Footer = () => {
                 <div className='col'>
                     <h5>Company</h5>
                     <span className='bar'></span>
-                        <a href='/'>Home</a>
-                        <a href='/'>About</a>
-                        <a href='/'>Services</a>
-                        <a href='/'>Blogs</a>      
+                    <ul className='click'>
+                    <li onClick={() => handleLink("/")}>
+                       Home
+                    </li>
+                    <li onClick={() => handleLink("/about")}>
+                        About                      
+                    </li>
+                    <li onClick={() => handleLink("/services")}>
+                        Services                      
+                    </li>
+                    <li onClick={() => handleLink("/blog")}>
+                        Blog                      
+                    </li>
+                </ul>    
                 </div>
                 <div className='col'>
                     <h5>Social</h5>

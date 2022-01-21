@@ -1,0 +1,76 @@
+.register-container {
+    width: 30%;
+    margin-left: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-wrapper {
+    background-color: var(--primary);
+    min-width: 350px;
+    min-height: 650px;
+    padding: 3rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.title {
+    color: coral;
+    text-align: center;
+    margin: 8rem 0 4rem 0;
+}
+
+.name, .email, .password {
+   color: cornsilk;
+   font-size: 16px; 
+}
+
+.password {
+    margin-bottom: 4rem;
+}
+
+.input {
+    color: whitesmoke;
+    height: 32px;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: 2px solid black;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.error {
+    color: crimson;
+}
+
+.btn-1 {
+    display: flex;
+    padding: 10px 40px;
+    background-color: tomato;
+    color: azure;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: auto;
+    outline: none;
+    border: none;
+    transition: all 0.2s;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.form-success {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    min-width: 370px;
+    color: tomato;
+}
+
+

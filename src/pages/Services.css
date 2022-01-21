@@ -1,0 +1,106 @@
+.services {
+    background-color: #f5f8ff;
+}
+
+.services .container {
+    display: grid;
+    background-color: #f5f8ff;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 8rem 4rem;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding: 1rem;
+}
+.services .container .span-services{
+    color: tomato;
+}
+
+.services .left {
+    padding: 1rem;
+}
+
+.services h1 {
+    font-size: 100px;
+    padding: 1rem 0;
+}
+
+.services .right {
+    padding: 1rem;
+}
+
+.services .img-container{
+    width: 100%;
+    display: flex;
+}
+
+.services img {
+    max-width: 80%;
+    margin: auto;
+}
+
+.services .services-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 20rem 15rem 20rem 15rem;
+    background-color: slategrey;
+    align-items: center;
+}
+
+.services .services-list p {
+    font-size: 10px;
+}
+
+.services .services-list .lists-1 {
+    text-align: justify;
+    background-color: slategrey;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .services-list .lists-1 p {
+    font-size: 10px;
+}
+
+.services .services-list .lists-2 {
+    text-align: justify;
+    background-color: slategrey;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .services-list .list-2 p {
+    font-size: 10px;
+}
+
+.services .services-list .lists-3 {
+    text-align: justify;
+    background-color: slategrey;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .services-list .list-3 p {
+    font-size: 10px;
+}
+
+.services .services-list h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 940px) {
+    .services .container {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+
+    @media  screen and (max-width: 478px) {
+        h1 {
+            margin-top: 2rem;
+            font-size: 25px;
+        }
+    }
+}
