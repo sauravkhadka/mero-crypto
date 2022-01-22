@@ -3,7 +3,8 @@
    grid-template-columns: repeat(2, 1fr);
    justify-content: center;
    align-items: center;
-   padding: 3rem 1rem; 
+   padding: 3rem 1rem;
+   border-bottom: 1px solid #e5e9f3;
 }
 
 .portfolio img {
@@ -13,7 +14,6 @@
 
 .portfolio .left h2 {
     margin: 1.2rem;
-    color: var(--primary);
 }
 
 .portfolio .left p {

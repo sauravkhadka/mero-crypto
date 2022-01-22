@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Validation from './Validation';
 import './Register.css';
+import { useNavigate } from 'react-router-dom';
 
 const Register = ({ submitForm }) => {
 
@@ -26,6 +27,12 @@ const Register = ({ submitForm }) => {
         setDataIsCorrect(true);
     };
 
+    const navigate = useNavigate()
+
+    const handleLink = (path) => {
+        navigate(`${path}`);
+    }
+
     useEffect(() =>{
         if(Object.keys(errors).length === 0 && dataIsCorrect){
             submitForm(true);
@@ -38,7 +45,7 @@ const Register = ({ submitForm }) => {
                 <div>
                   <h2 className='title'>Create Account</h2>
                 </div>
-                <form className='form-wrapper'>
+                <form className='form-wrapper' onSubmit={handleFormSubmit}>
                     <div className='name'>
                       <label className='label'>Full Name</label>
                       <input className='input' 
@@ -66,7 +73,7 @@ const Register = ({ submitForm }) => {
                         onChange={handleChange} />
                         {errors.password && <p className='error'>{errors.password}</p>}
                     </div>
-                    <button className='btn-1' onClick={handleFormSubmit}>Sign Up</button>
+                    <button className='btn-1' onSubmit={() => handleLink("/Registersuccess")}>Sign Up</button>
                 </form>
             </div>
         </div>

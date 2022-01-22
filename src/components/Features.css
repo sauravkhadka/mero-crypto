@@ -1,7 +1,9 @@
 .features {
     text-align: center;
-    color: var(--primary);
+    color: black;
     background: #ffffff;
+    font-weight: 450;
+    margin-top: 4rem;
 }
 
 .features .container {

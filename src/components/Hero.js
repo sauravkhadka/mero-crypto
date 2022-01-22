@@ -1,9 +1,16 @@
 import React from 'react'
 import './Hero.css'
 import Crypto from '../assets/3828543.png'
+import { useNavigate } from 'react-router-dom'
 
 
 const Hero = () => {
+
+    const navigate = useNavigate()
+
+    const handleLink = (path) => {
+        navigate(`${path}`);
+    }
     return (
         <div className='hero'>
             <div className='container'>
@@ -16,7 +23,7 @@ const Hero = () => {
                         and frictionless multi-exchange trading all in one place.</p> 
                     <div className='input-container'>
                         <input type='email' placeholder='Your Email'/>
-                        <button className='btn'>Learn More</button>
+                        <button className='btn' onClick={() => handleLink("/About")}>Learn More</button>
                     </div>
                 </div>
 

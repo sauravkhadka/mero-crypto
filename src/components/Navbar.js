@@ -33,7 +33,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className='btn-group'>
-                    <button className='btn' onClick={() => handleLink("/signin")}>Login</button> 
+                    <button className='btn' onClick={() => handleLink("/signin")}>Sign In</button> 
                 </div>
                 <div className='btn-group'>
                     <button className='btn' onClick={() => handleLink("/register")}>Register</button> 

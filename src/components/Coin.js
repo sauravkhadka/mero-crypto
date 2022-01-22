@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react'
 import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi'
 import './Coin.css'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 
 const Coin = () => {
@@ -19,6 +20,12 @@ const Coin = () => {
         })
     }, [])
 
+    const navigate = useNavigate()
+
+    const handleLink = (path) => {
+        navigate(`${path}`);
+    }
+
     // console.log(data)
 
     if(!data) return null
@@ -29,7 +36,7 @@ const Coin = () => {
                 <div className='left'>
                     <h2>Explore top crypto like <span className='span-coin'>Bitcoin, Doge, Etherum</span></h2>
                     <p>See all available cryptocurrencies</p>
-                    <button className='btn'>See More</button>
+                    <button className='btn' onClick={() => handleLink("/Cryptomain")}>See More</button>
                 </div>
 
                 <div className='right'>

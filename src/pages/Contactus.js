@@ -34,7 +34,7 @@ function Contactus() {
                         <TextField style={{ backgroundColor:"whitesmoke", borderRadius:"5px"}} label="Message" multiline rows={4} placeholder="Type your message here" variant="outlined" fullWidth required />
                         </Grid>
                         <Grid item xs={12}>
-                        <Button style={{ color:"white", backgroundColor:"#000e3e", borderRadius:"5px", fontWeight:"500", marginTop:"10px"}} type="submit" variant="contained" color="blue" fullWidth>Submit</Button>
+                        <Button style={{ color:"white", backgroundColor:"#3f51b5", borderRadius:"4px", fontWeight:"500", marginTop:"10px"}} type="submit" variant="contained" color="blue" fullWidth>Submit</Button>
                         </Grid>
 
                     </Grid>

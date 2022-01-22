@@ -22,13 +22,10 @@ const Footer = () => {
                         <li onClick={() => handleLink("/contactus")}>
                             Contact Us
                         </li>
-                        <li onClick={() => handleLink("/contactus")}>
-                             Privacy Policy
+                        <li onClick={() => handleLink("/legal")}>
+                            Legal and Privacy
                         </li>
-                        <li onClick={() => handleLink("/contactus")}>
-                            Legal
-                        </li>
-                        <li onClick={() => handleLink("/contactus")}>
+                        <li onClick={() => handleLink("/faqs")}>
                             FAQs
                         </li>
                     </ul>

@@ -98,9 +98,17 @@
     }
 
     @media  screen and (max-width: 478px) {
-        h1 {
+        .services h1 {
             margin-top: 2rem;
-            font-size: 25px;
+            font-size: 3rem;
+        }
+        .services h2 {
+            margin-top: 0.5rem;
+            font-size: 2rem;
+        }
+        .services p {
+            margin-top:0.2rem;
+            font-size: 0.9rem;
         }
     }
 }

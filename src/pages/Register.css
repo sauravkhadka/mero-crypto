@@ -48,16 +48,17 @@
 }
 
 .btn-1 {
-    display: flex;
+    width: 100%;
     padding: 10px 40px;
-    background-color: tomato;
+    background-color: #000e3e;
     color: azure;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     margin: auto;
     outline: none;
-    border: none;
+    border: transparent;
+    border-radius: 4px;
     transition: all 0.2s;
 }
 
