@@ -60,7 +60,7 @@
         top: 90px;
         right: -50%;
         width: 50%;
-        height: 100vh;
+        height: auto;
         transition: 0.5s;
         z-index: 2;
         background: whitesmoke;
@@ -69,6 +69,7 @@
 
     .nav-menu.active {
         right: 0;
+        height: auto;
     }
 
     .nav-menu li {
@@ -96,6 +97,7 @@
         .hamburger {
             display: flex;
             margin-left: 10px;
+            height: auto;
         }
 
         .header .container .btn-group {

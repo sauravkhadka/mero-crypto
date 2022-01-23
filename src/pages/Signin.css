@@ -13,6 +13,9 @@
     box-sizing: border-box;
     border-radius: 5px;
 }
+.main-container .signin-container .signin-form {
+    width: 80%;
+}
 .signin-title {
     margin-bottom: 4rem;
     margin-top: 2rem;
@@ -53,4 +56,19 @@
     border:transparent;
     border-radius: 4px;
     margin-top: 2rem;
-  }
+}
+@media screen and (max-width: 940px) {
+    .main-container .signin-container {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+
+    @media  screen and (max-width: 478px) {
+        .main-container .signin-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: justify;
+        }
+    }
+    
+}
