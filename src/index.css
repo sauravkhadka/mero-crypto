@@ -3,6 +3,7 @@
 :root {
   --primary: #3f51b5;
   --background: #f5f8ff;
+  scroll-behavior: smooth;
 }
 .hide-native-scrollbar {
   scrollbar-width: none;

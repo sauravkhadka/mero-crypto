@@ -11,15 +11,14 @@ const Services = () => {
         <div className='right'>
           <h2>What we do</h2><br />
           <p>
-          sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit 
-          ametLorem ipsum dolor sit ametLorem ipsum Lorem ipsum dolor 
-          sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-          Lorem ipsum dolor sit amet dolor sit amet 
-          Lorem ipsum dolor sit ametLorem ipsum dolor sit 
-          ametLorem ipsum dolor sit amet
-          sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit 
-          ametLorem ipsum dolor sit ametLorem ipsum Lorem ipsum dolor 
-          sit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Maxime mollitia, molestiae quas vel sint commodi repudiandae 
+              consequuntur voluptatum laborum numquam blanditiis harum quisquam 
+              eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! 
+              Provident similique accusantium nemo autem. Veritatis obcaecati 
+              tenetur iure eius earum ut molestias architecto voluptate aliquam 
+              nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, 
+              odit, tenetur error.
           </p> 
         </div>
       </div>
