@@ -1,0 +1,56 @@
+.main-container {
+    width: 30%;
+    margin-left: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+.signin-container {
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+    background-color: skyblue;
+    min-width: 350px;
+    padding: 3rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.signin-title {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    color: aliceblue;
+    text-align: center;
+}
+.signin-email, .signin-psw {
+    display: grid;
+    font-size: 16px; 
+}
+.password {
+    margin-bottom: 4rem;
+}
+.error {
+    color: crimson;
+}
+
+.input {
+    color: whitesmoke;
+    height: 32px;
+    font-size: 15px;
+    outline: none;
+    width: 10%;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: 2px solid black;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.btn-2 {
+    padding: 13px 30px;
+    background-color: var(--primary);
+    color: azure;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border:transparent;
+    border-radius: 4px;
+    margin-top: 2rem;
+  }

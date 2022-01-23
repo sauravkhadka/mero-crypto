@@ -15,6 +15,7 @@ import Cryptodata from "./pages/Cryptodata/Cryptodata";
 import Cryptomain from "./pages/Cryptodata/Cryptomain";
 import Signinsuccess from "./pages/Signinsuccess";
 import Legal from "./pages/Legal";
+import Faqs from "./pages/Faqs";
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/coinss" element={<Coinss />} />
         <Route exact path="/contactus" element={<Contactus />} />
         <Route exact path="/legal" element={<Legal />} />
+        <Route exact path="/faqs" element={<Faqs />} />
         <Route exact path="/cryptodata" element={<Cryptodata />} />
         <Route exact path="/cryptomain" element={<Cryptomain />} />
         <Route exact path="/signinsuccess" element={<Signinsuccess />} />

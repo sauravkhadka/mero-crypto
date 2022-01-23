@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Validation from './Validation';
 import './Register.css';
 import { useNavigate } from 'react-router-dom';
 
 const Register = ({ submitForm }) => {
+
+        const navigate = useNavigate()
 
     const [values, setValues] = useState({
         fullname:"",
@@ -12,7 +14,6 @@ const Register = ({ submitForm }) => {
     });
 
     const [errors, setErrors] = useState({});
-    const [dataIsCorrect, setDataIsCorrect] = useState(false);
 
     const handleChange = (event) => {
         setValues({
@@ -24,20 +25,10 @@ const Register = ({ submitForm }) => {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         setErrors(Validation(values));
-        setDataIsCorrect(true);
-    };
-
-    const navigate = useNavigate()
-
-    const handleLink = (path) => {
-        navigate(`${path}`);
-    }
-
-    useEffect(() =>{
-        if(Object.keys(errors).length === 0 && dataIsCorrect){
-            submitForm(true);
+        if(Object.keys(errors).length === 0){
+            navigate("/registersuccess");
         }
-    }, [errors]);
+    };
 
   return (
         <div className='register-container'>
@@ -73,7 +64,7 @@ const Register = ({ submitForm }) => {
                         onChange={handleChange} />
                         {errors.password && <p className='error'>{errors.password}</p>}
                     </div>
-                    <button className='btn-1' onSubmit={() => handleLink("/Registersuccess")}>Sign Up</button>
+                    <button className='btn-1'>Sign Up</button>
                 </form>
             </div>
         </div>
