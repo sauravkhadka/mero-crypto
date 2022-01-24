@@ -19,6 +19,7 @@
  
 .devices .left p {
    margin: 1.2rem;
+   text-align: justify;
 }
  
 .devices .container .left .btn {

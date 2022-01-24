@@ -3,9 +3,9 @@ import Validation from './Validation';
 import './Register.css';
 import { useNavigate } from 'react-router-dom';
 
-const Register = ({ submitForm }) => {
+const Register = () => {
 
-        const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const [values, setValues] = useState({
         fullname:"",
@@ -22,7 +22,7 @@ const Register = ({ submitForm }) => {
         });
     };
 
-    const handleFormSubmit = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
         setErrors(Validation(values));
         if(Object.keys(errors).length === 0){
@@ -36,14 +36,14 @@ const Register = ({ submitForm }) => {
                 <div>
                   <h2 className='title'>Create Account</h2>
                 </div>
-                <form className='form-wrapper' onSubmit={handleFormSubmit}>
+                <form className='form-wrapper' onSubmit={handleSubmit}>
                     <div className='name'>
                       <label className='label'>Full Name</label>
                       <input className='input' 
                       type='text' 
                       name='fullname' 
                       value={values.fullname}
-                      onChange={handleChange} />
+                      onChange={handleChange} required />
                       {errors.fullname && <p className='error'>{errors.fullname}</p>}
                     </div>
                     <div className='email'>
@@ -52,7 +52,7 @@ const Register = ({ submitForm }) => {
                       type='email' 
                       name='email' 
                       value={values.email}
-                      onChange={handleChange} />
+                      onChange={handleChange} required />
                       {errors.email && <p className='error'>{errors.email}</p>}
                     </div>
                     <div className='password'>
@@ -61,10 +61,10 @@ const Register = ({ submitForm }) => {
                         type='password' 
                         name='password' 
                         value={values.password}
-                        onChange={handleChange} />
+                        onChange={handleChange} required />
                         {errors.password && <p className='error'>{errors.password}</p>}
                     </div>
-                    <button className='btn-1'>Sign Up</button>
+                    <button className='btn'>Sign Up</button>
                 </form>
             </div>
         </div>

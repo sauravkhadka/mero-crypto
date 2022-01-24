@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cryptodata.css';
+import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi'
 
 function Cryptodata({ image, name, symbol, price, volume, priceChange, marketcap }) {
     return (
@@ -15,9 +16,9 @@ function Cryptodata({ image, name, symbol, price, volume, priceChange, marketcap
                         <p className='cryptodata-price'>${price}</p>
                         <p className='cryptodata-volume'>{volume.toLocaleString()}</p>
                         {priceChange < 0 ? (
-                            <p className="cryptodata-percent red">{priceChange.toFixed(2)}%</p>
+                            <p className="cryptodata-percent red"><FiArrowDown className='icon' />{priceChange.toFixed(2)}%</p>
                         ) : (
-                            <p className="cryptodata-percent green">{priceChange.toFixed(2)}%</p>
+                            <p className="cryptodata-percent green"><FiArrowUpRight className='icon' />{priceChange.toFixed(2)}%</p>
                         )}
                         <p className="cryptodata-marketcap">
                             ${marketcap.toLocaleString()}

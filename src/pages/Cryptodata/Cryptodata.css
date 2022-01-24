@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #1a1a1c;
 }
 .cryptodata-container {
     display: flex;
@@ -76,6 +75,7 @@
     text-align: center;
     justify-content: space-around;
     width: 100%;
+    color: black;
 }
 
 .cryptodata-price {
@@ -100,4 +100,24 @@
 
 .green {
     color: green
+}
+@media screen and (max-width: 940px)  {
+    .mero-crypto-coin {
+        grid-template-columns: 1fr;
+    }
+
+    .mero-crypto-coin {
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 478px) {
+    .mero-crypto-coin {
+        clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 95%);
+    }
+    .mero-crypto-coin {
+        width: 100%;
+    }
+    
 }

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Legal = () => {
   return (
-    <div style={{margin:"8rem 12rem 6rem 12rem", textAlign:"justify"}}>
-        <h2 style={{fontSize: "2.2rem"}}>Legal</h2>
-        <p style={{marginTop: "1.2rem"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+    <div className='container' style={{display:"grid", justifyContent:"centre",padding:"3rem 2rem", textAlign:"justify"}}>
+        <h2 style={{fontSize: "2rem", marginTop:"4rem"}}>Legal</h2>
+        <p style={{fontSize:"1.2rem", marginTop: "2rem"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
             molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
             numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
             optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
@@ -23,7 +23,7 @@ const Legal = () => {
             fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore 
             suscipit quas? Nulla, placeat.
         </p>
-        <ul style={{display: "list-item", listStyleType: "circle", margin:"2rem 0rem 2rem 2rem"}}>
+        <ul style={{display: "list-item", listStyleType: "circle", margin:"2rem 1.2rem 2rem 1.2rem"}}>
             <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                 molestiae quas vel sint commodi repudiandae consequuntur voluptatum. 
             </li>

@@ -1,27 +1,28 @@
 .register-container {
-    width: 30%;
-    margin-left: 30rem;
+    margin: 4rem auto;
     justify-content: center;
     align-items: center;
 }
 
 .app-wrapper {
     background-color: skyblue;
-    min-width: 350px;
+    align-items: center;
+    width: 450px;
     min-height: 650px;
+    margin-left: 30rem;
     padding: 3rem;
     box-sizing: border-box;
     border-radius: 5px;
 }
 
 .title {
-    color: rgb(255, 255, 255);
+    color:#000e3e;
     text-align: center;
-    margin: 8rem 0 4rem 0;
+    margin: 6rem 0 4rem 0;
 }
 
 .name, .email, .password {
-   color: cornsilk;
+   color: #000e3e;
    font-size: 16px; 
 }
 
@@ -30,7 +31,7 @@
 }
 
 .input {
-    color: whitesmoke;
+    color: #000e3e;
     height: 32px;
     font-size: 15px;
     outline: none;
@@ -73,5 +74,44 @@ button:active {
     min-width: 370px;
     color: tomato;
 }
+@media screen and (max-width: 940px) {
+    h1 {
+        font-size: 24px;
+    }
+    .register-container {
+        width: 100vw;
+    }
+    .app-wrapper {
+        background-color: skyblue;
+        align-items: center;
+        width: 450px;
+        min-height: 650px;
+        margin-left: 12rem;
+        margin-right: 20px;
+        padding: 3rem;
+        box-sizing: border-box;
+        border-radius: 5px;
+       
+    }
 
+    @media  screen and (max-width: 478px) {
+        h1 {
+            font-size: 22px;
+        }
+        .register-container {
+            width: 100vw;
+        }
+        .app-wrapper {
+            background-color: skyblue;
+            align-items: center;
+            width: 350px;
+            margin-left: 20px;
+            margin-right: 10px;
+            padding: 3rem;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+    }
+    
+}
 

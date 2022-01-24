@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
-import Coinss from "./pages/Coinss";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Signin from "./pages/Signin";
@@ -31,7 +30,6 @@ function App() {
         <Route exact path="/signin" element={<Signin />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/registersuccess" element={<Registersuccess />} />
-        <Route exact path="/coinss" element={<Coinss />} />
         <Route exact path="/contactus" element={<Contactus />} />
         <Route exact path="/legal" element={<Legal />} />
         <Route exact path="/faqs" element={<Faqs />} />
