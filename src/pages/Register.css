@@ -1,15 +1,15 @@
 .register-container {
-    margin: 4rem auto;
     justify-content: center;
     align-items: center;
+    padding: 100px 10px 0px 10px;
 }
 
 .app-wrapper {
     background-color: skyblue;
     align-items: center;
-    width: 450px;
-    min-height: 650px;
-    margin-left: 30rem;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
     padding: 3rem;
     box-sizing: border-box;
     border-radius: 5px;
@@ -18,7 +18,7 @@
 .title {
     color:#000e3e;
     text-align: center;
-    margin: 6rem 0 4rem 0;
+    margin-bottom: 4rem;
 }
 
 .name, .email, .password {
@@ -81,7 +81,7 @@ button:active {
     .register-container {
         width: 100vw;
     }
-    .app-wrapper {
+    /* .app-wrapper {
         background-color: skyblue;
         align-items: center;
         width: 450px;
@@ -92,7 +92,7 @@ button:active {
         box-sizing: border-box;
         border-radius: 5px;
        
-    }
+    } */
 
     @media  screen and (max-width: 478px) {
         h1 {
@@ -101,7 +101,7 @@ button:active {
         .register-container {
             width: 100vw;
         }
-        .app-wrapper {
+        /* .app-wrapper {
             background-color: skyblue;
             align-items: center;
             width: 350px;
@@ -110,7 +110,7 @@ button:active {
             padding: 3rem;
             box-sizing: border-box;
             border-radius: 5px;
-        }
+        } */
     }
     
 }

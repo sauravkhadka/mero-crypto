@@ -23,8 +23,9 @@ const Hero = () => {
                         and frictionless multi-exchange trading all in one place.</p> 
                     <div className='input-container'>
                         <input type='email' placeholder='Your Email'/>
-                        <button className='btn' onClick={() => handleLink("/About")}>Learn More</button>
+                        
                     </div>
+                    <button className='btn' onClick={() => handleLink("/About")}>Learn More</button>
                 </div>
 
                 <div className='right'>

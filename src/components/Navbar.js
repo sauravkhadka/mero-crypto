@@ -19,6 +19,14 @@ const Navbar = () => {
             <div className='container'>
                 <h1 onClick={() => handleLink("/")}>Mero<span className='span-nav'>Crypto</span></h1>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <div className='btn-nav-parent'>
+                    <div className='btn-group-nav'>
+                            <button className='btn' onClick={() => handleLink("/signin")}>SignIn</button> 
+                        </div>
+                        <div className='btn-group-nav'>
+                            <button className='btn' onClick={() => handleLink("/register")}>Register</button> 
+                        </div>
+                </div>
                     <li onClick={() => handleLink("/")}>
                        Home
                     </li>
@@ -31,15 +39,19 @@ const Navbar = () => {
                     <li onClick={() => handleLink("/blog")}>
                         Blog                      
                     </li>
+                    
                 </ul>
-                <div className='btn-group'>
-                    <button className='btn' onClick={() => handleLink("/signin")}>Sign In</button> 
-                </div>
-                <div className='btn-group'>
-                    <button className='btn' onClick={() => handleLink("/register")}>Register</button> 
-                </div>
-                <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={20} style={{color: '#333'}} />) : (<FaBars size={20} style={{color: '#333'}} />)}   
+                <div className='btn-nav'>
+                    <div className='btn-group'>
+                        <button className='btn' onClick={() => handleLink("/signin")}>Sign In</button> 
+                    </div>
+                    <div className='btn-group'>
+                        <button className='btn' onClick={() => handleLink("/register")}>Register</button> 
+                    </div>
+                    <div className='hamburger' onClick={handleClick}>
+                        
+                        {click ? (<FaTimes size={20} style={{color: '#333'}} />) : (<FaBars size={20} style={{color: '#333'}} />)}   
+                    </div>
                 </div>
             </div>
         </div>

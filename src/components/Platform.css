@@ -35,8 +35,8 @@
 
  @media screen and (max-width: 940px) {
     .platform .container {
+        display: grid;
         grid-template-columns: 1fr;
-        margin: 1rem 0;
     }
     
 }

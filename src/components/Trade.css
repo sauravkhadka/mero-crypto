@@ -25,7 +25,7 @@
 @media screen and (max-width: 940px) {
     .trade .container {
         grid-template-columns: 1fr;
-        margin: 1rem 0;
+
     }
     
 }

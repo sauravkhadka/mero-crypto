@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 4rem auto;
-    text-align: justify;
+    text-align: left;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -13,6 +13,9 @@
 
 .hero .left {
     padding: 1rem;
+}
+.hero .left p {
+    text-align: justify;
 }
 
 .hero h1 {
@@ -37,11 +40,14 @@
     max-width: 80%;
     margin: auto;
 }
+.hero input {
+    width: 100%;
+}
 
 @media screen and (max-width: 940px) {
     .hero .container {
         grid-template-columns: 1fr;
-        margin: 1rem 0;
+
     }
 
     @media  screen and (max-width: 478px) {

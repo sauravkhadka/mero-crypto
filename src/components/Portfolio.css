@@ -42,7 +42,7 @@
 @media screen and (max-width: 940px) {
   .portfolio .container {
       grid-template-columns: 1fr;
-      margin: 1rem 0;
+
   }
   
 }
@@ -50,7 +50,7 @@
 @media screen and (max-width: 478px) {
   .portfolio .container .left {
     grid-template-columns: 1fr;
-    margin: 5rem 0;
+
     justify-content: center;
     align-items: center;
   }

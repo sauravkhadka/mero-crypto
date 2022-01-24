@@ -11,6 +11,7 @@
 
 .header .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     padding: 1rem;
@@ -23,13 +24,20 @@
 }
 
 .nav-menu {
-    margin-left: 25rem;
     display: flex;
+    width: 250px;
 }
-
+.nav-menu.active {
+    width: 250px;
+}
 .header .container .btn-group {
     margin-left: 1rem;
     font-size: 10px;
+}
+.btn-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-menu li {
@@ -45,25 +53,32 @@
     text-decoration-color: tomato;
     transition: 0.5s;
 }
+.btn-nav-parent {
+    display: none;
+}
 
 .hamburger {
     display: none;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 @media screen and (max-width:948px) {
     .hamburger {
         display: flex;
     }
-
+    .btn-nav-parent {
+        display: flex;
+        justify-content: space-evenly;
+    }
     .nav-menu {
         position: absolute;
         flex-direction: column;
         justify-content: start;
         text-align: center;
         top: 90px;
-        right: -50%;
-        width: 50%;
+        right: -100%;
+        width: 250px;
         height: auto;
         transition: 0.5s;
         z-index: 2;
@@ -73,6 +88,7 @@
     .nav-menu.active {
         right: 0;
         height: auto;
+        width: 250px;
     }
 
     .nav-menu li {
@@ -90,7 +106,7 @@
             font-size: 20px;
         }
         .btn-group {
-            width: 30%;
+            display: none;
         }
 
         .container .btn {
@@ -115,8 +131,9 @@
             font-size: 18px;
         }
         .btn-group {
-            width: 30%;
+            display: none;
         }
+
 
         .container .btn {
             font-size: 8px;
