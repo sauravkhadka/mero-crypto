@@ -9,7 +9,7 @@ import Trade from '../components/Trade';
 
 const Home = () => {
   return <div>
-        <Hero/>
+      <Hero/>
       <Coin/>
       <Platform />
       <Portfolio />

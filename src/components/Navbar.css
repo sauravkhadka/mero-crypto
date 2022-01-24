@@ -15,6 +15,9 @@
     height: 100%;
     padding: 1rem;
 }
+.header .container h1 {
+    cursor: pointer;
+}
 .header .container .span-nav{
     color: tomato;
 }

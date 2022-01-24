@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <div className='header'>
             <div className='container'>
-                <h1>Mero<span className='span-nav'>Crypto</span></h1>
+                <h1 onClick={() => handleLink("/")}>Mero<span className='span-nav'>Crypto</span></h1>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li onClick={() => handleLink("/")}>
                        Home
