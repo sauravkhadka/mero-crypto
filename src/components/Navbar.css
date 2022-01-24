@@ -33,7 +33,7 @@
     padding: 0 1rem;
     font-size: 1rem;
     font-weight: 500;
-    color: #333;
+    color: black;
 }
 
 .nav-menu li:hover {
@@ -57,6 +57,7 @@
         position: absolute;
         flex-direction: column;
         justify-content: start;
+        text-align: center;
         top: 90px;
         right: -50%;
         width: 50%;
@@ -64,7 +65,6 @@
         transition: 0.5s;
         z-index: 2;
         background: whitesmoke;
-        border-left: 1px solid;
     }
 
     .nav-menu.active {
@@ -75,7 +75,7 @@
     .nav-menu li {
         padding: 1rem;
         width: 100%;
-        border-bottom: 1px solid  rgb(14, 1, 1)
+        border-bottom: 1px solid  rgb(209, 209, 209)
     }
 
     .nav-menu a {
@@ -98,6 +98,7 @@
             display: flex;
             margin-left: 10px;
             height: auto;
+            border: none;
         }
 
         .header .container .btn-group {
