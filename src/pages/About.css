@@ -5,8 +5,9 @@
 
 .about .mission {
     padding: 3rem 15rem 3rem 15rem;
-    text-align: left;
+    text-align: justify;
     margin-top: 3rem;
+
 }
 
 .about .mission p {
@@ -33,7 +34,7 @@
     max-width: 600px;
 }
 
-.about .about-post {
+.about .about-post  {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -78,6 +79,10 @@
     .about .about-image {
         margin-top: 3.5rem;
     }
+    .about .mission {
+        padding: 6rem;
+        text-align: justify;
+    }
 
     @media  screen and (max-width: 478px) {
         .about .container .about-post {
@@ -100,7 +105,7 @@
         }
 
         .about .mission {
-            padding: 0.1rem 0.8rem 0.8rem 0.8rem;
+            padding: 3rem;
             margin-top: 3.5rem;
             text-align: justify;
         }

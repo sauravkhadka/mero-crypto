@@ -3,12 +3,14 @@ import {FaBars, FaTimes} from 'react-icons/fa'
 import './Navbar.css'
 import '../pages/Signin.js'
 import '../pages/Register.js'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
+    function handleClick(){
+        return setClick(!click)
+    }
     const navigate = useNavigate()
     const handleLink = (path) => {
         navigate(`${path}`);
@@ -27,28 +29,28 @@ const Navbar = () => {
                             <button className='btn' onClick={() => handleLink("/register")}>Register</button> 
                         </div>
                 </div>
-                    <li onClick={() => handleLink("/")}>
+                    <Link onClick={() => handleClick()} to="/">
                        Home
-                    </li>
-                    <li onClick={() => handleLink("/about")}>
+                    </Link>
+                    <Link onClick={() => handleClick()} to="/about">
                         About                      
-                    </li>
-                    <li onClick={() => handleLink("/services")}>
+                    </Link>
+                    <Link onClick={() => handleClick()} to="/services">
                         Services                      
-                    </li>
-                    <li onClick={() => handleLink("/blog")}>
+                    </Link>
+                    <Link onClick={() => handleClick()} to="/blog">
                         Blog                      
-                    </li>
+                    </Link>
                     
                 </ul>
                 <div className='btn-nav'>
                     <div className='btn-group'>
-                        <button className='btn' onClick={() => handleLink("/signin")}>Sign In</button> 
+                        <button className='btn' onClick={() => handleClick()} to="/signin">Sign In</button> 
                     </div>
                     <div className='btn-group'>
-                        <button className='btn' onClick={() => handleLink("/register")}>Register</button> 
+                        <button className='btn' onClick={() => handleClick()} to="/register">Register</button> 
                     </div>
-                    <div className='hamburger' onClick={handleClick}>
+                    <div className={click ? "hamburger active" : "hamburger"} onClick={() => handleClick()}>
                         
                         {click ? (<FaTimes size={20} style={{color: '#333'}} />) : (<FaBars size={20} style={{color: '#333'}} />)}   
                     </div>

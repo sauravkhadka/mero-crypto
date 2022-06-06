@@ -62,7 +62,7 @@ const About = () => {
           </div>
 
           <div className='right'>
-          <img src={Trading} alt='' />  
+            <img src={Trading} alt='' />  
           </div>
         </div>
       </div>
